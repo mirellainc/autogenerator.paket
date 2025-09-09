@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO LANDING PAGES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="icon" href="https://cdn.orderonline.id/uploads/images_3111301750865499449.png">
+    <style>
+        .color-preview {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .preview-container {
+            min-height: 200px;
+            transition: all 0.3s ease;
+            overflow: auto;
+            max-height: 500px;
+        }
+        .preview-container pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+            padding: 0;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">AUTO LANDING PAGES</h1>
+                <p class="text-gray-600">Generet - Jadwal - Running - Order - Klosing - Tutup Buku. </p>
+            </div>
+
+            <!-- Main Form -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <!-- Form Section -->
+                    <div class="p-6 md:p-8 w-full">
+                        <form id="promptForm">
+<!-- Arip Baris Satu -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barissatu">
+                                    1. Title Judul Product
+                                </label>
+                                <input type="text" id="barissatu" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Nama Produk Anda">
+                            </div>
+ <!-- Arip Baris Dua -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barisdua">
+                                    2. Gambar Utama
+                                </label>
+                                <input type="text" id="barisdua" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Link Gambar Utama Anda">
+                            </div>
+
+<!-- Arip Baris Tiga -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="baristiga">
+                                    3. Judul Produk
+                                </label>
+                                <input type="text" id="baristiga" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Judul Produk Anda">
+                            </div>
+
+<!-- Arip Baris Empat -->
+                            <div class="mb-6">
+                                <label class="block text-violet-900 font-medium mb-2" for="barisempat">
+                                    4. Diskripsi Produk
+                                </label>
+                                <textarea id="barisempat" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Diskripsi Produk Anda"></textarea>
+                            </div>
+<!-- Arip Baris Lima -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barislima">
+                                    5. Detail Gambar 1
+                                </label>
+                                <input type="url" id="barislima" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Enam -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barisenam">
+                                    6. Diskripsi Gambar 1
+                                </label>
+                                <textarea id="barisenam" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Diskripsi Gambar 1 Anda"></textarea>
+                            </div>
+<!-- Arip Baris Tujuh -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="baristujuh">
+                                    7. Detail Gambar 2
+                                </label>
+                                <input type="url" id="baristujuh" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Delapan -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barisdelapan">
+                                    8. Diskripsi Gambar 2
+                                </label>
+                                <textarea id="barisdelapan" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Diskripsi Gambar 2 Anda"></textarea>
+                            </div>
+<!-- Arip Baris Sembilan -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barissembilan">
+                                    9. Detail Gambar 3
+                                </label>
+                                <input type="url" id="barissembilan" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Sepuluh -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barissepuluh">
+                                    10. Diskripsi Gambar 3
+                                </label>
+                                <textarea id="barissepuluh" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Diskripsi Gambar 3 Anda"></textarea>
+                            </div>
+<!-- Arip Baris Sebelas -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barissebelas">
+                                    11. Detail Gambar 4
+                                </label>
+                                <input type="url" id="barissebelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="https://link.com/image.jpg">
+                            </div>
+<!-- Arip Baris Duabelas -->
+                            <div class="mb-6">
+                                <label class="block text-green-900 font-medium mb-2" for="barisduabelas">
+                                    12. Diskripsi Gambar 4
+                                </label>
+                                <textarea id="barisduabelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Isi Diskripsi Gambar 4 Anda"></textarea>
+                            </div>
+<!-- Arip Baris Tigabelas -->
+                            <div class="mb-6">
+                                <label class="block text-red-950 font-medium mb-2" for="baristigabelas">
+                                    13. Harga Normal
+                                </label>
+                                <input type="text" id="baristigabelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Contoh: 225.000 ( Tambahkan 66 Ribu Dari Harga Jual )">
+                            </div>
+<!-- Arip Baris Empatbelas -->
+                            <div class="mb-6">
+                                <label class="block text-red-950 font-medium mb-2" for="barisempatbelas">
+                                    14. Harga Jual
+                                </label>
+                                <input type="text" id="barisempatbelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Contoh: 165.000">
+                            </div>
+<!-- Arip Baris Paket -->
+                            <div class="mb-6">
+                                <label class="block text-red-950 font-medium mb-2" for="barisisipaket">
+                                    15. Isi Paket
+                                </label>
+                                <input type="text" id="barisisipaket" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Contoh: Paket Isi 10 Pcs / Beli 1 Gratis 1">
+                            </div>
+<!-- Arip Baris Limabelas -->
+                            <div class="mb-6">
+                                <label class="block text-red-700 font-medium mb-2" for="limabelas">
+                                    16. Gambar Akhir
+                                </label>
+                                <input type="url" id="limabelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Link Gambar Penutup Diatas Form Order">
+                            </div>
+<!-- Arip Baris Enambelas -->
+                            <div class="mb-6">
+                                <label class="block text-red-700 font-medium mb-2" for="enambelas">
+                                    17. Form Pemsanan ( EMBED DARI OO )
+                                </label>
+                                <textarea id="enambelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan Embed Form OrderOnline"></textarea>
+                            </div>
+
+<!-- Generate Button -->
+                            <div class="mt-8">
+                                <button type="button" id="generateBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                                  GENERATE PROMPT
+                                </button>
+                            </div>
+
+<!-- Preview Section -->
+                            <div class="mt-8">
+                            <center>
+                                <h2 class="text-xl font-bold text-gray-800 mb-4">HASIL PROMPT</h2></center>
+                                <div class="preview-container bg-white rounded-lg p-4 border border-gray-200 mb-4">
+                                    <p class="text-gray-500 text-center py-8">Your generated prompt will appear here</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <button id="copyBtn" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center">
+                                        <i class="fas fa-copy mr-2"></i> Copy
+                                    </button>
+                                    <button id="downloadBtn" class="bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-4 rounded-lg transition duration-200 flex items-center">
+                                        <i class="fas fa-download mr-2"></i> Download
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+    <script>
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            // Get all form values
+const barissatu = document.getElementById('barissatu').value;
+const barisdua = document.getElementById('barisdua').value;
+const baristiga = document.getElementById('baristiga').value;
+const barisempat = document.getElementById('barisempat').value;
+const barislima = document.getElementById('barislima').value;
+const barisenam = document.getElementById('barisenam').value;
+const baristujuh = document.getElementById('baristujuh').value;
+const barisdelapan = document.getElementById('barisdelapan').value;
+const barissembilan = document.getElementById('barissembilan').value;
+const barissepuluh = document.getElementById('barissepuluh').value;
+const barissebelas = document.getElementById('barissebelas').value;
+const barisduabelas = document.getElementById('barisduabelas').value;
+const baristigabelas = document.getElementById('baristigabelas').value;
+const barisempatbelas = document.getElementById('barisempatbelas').value;
+const barislimabelas = document.getElementById('limabelas').value;
+const barisenambelas = document.getElementById('enambelas').value;
+const barisenambelas = document.getElementById('barisisipaket').value;
+
+            // Generate the prompt with proper field mapping
+            const prompt = `<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${barissatu || 'Not provided'}</title>
+    <script src="https://cdn.tailwindcss.com"><\/script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_9747641756992316314.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+                .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .premium-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .promo-timer {
+            background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            animation: pulse 2s infinite;
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #e1e1e1 0%, #f1f1f1 100%);
+        }
+        
+        .color-variant {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .color-variant:hover {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+        
+        .color-variant.active {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+        
+        .price-tag {
+            position: relative;
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+        }
+        
+        .price-tag::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #3b82f6;
+            border-radius: 9999px;
+            animation: borderPulse 2s infinite;
+        }
+        
+        @keyframes borderPulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .promo-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #ef4444;
+            color: white;
+            border-radius: 9999px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        .color-variant.active {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+        .color-variant.active {
+            border-color: #3b82f6;
+            transform: scale(1.05);
+        }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .bottom-nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .bottom-nav-btn {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background: rgb(153 60 255 / 74%);
+            transition: all 0.3s ease;
+        }
+        .bottom-nav-btn:hover {
+            background: rgb(253 118 1 / 74%);
+            transform: translateY(-3px);
+        }
+        .bottom-nav-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<!-- Hero Image -->
+    <section class="w-full">
+        <img src="${barisdua || 'Not provided'}" alt="${barissatu || 'Product Image'}" class="w-full h-auto">
+    </section>
+
+    <!-- Product Title & Description -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl md:text-4xl font-bold text-center text-blue-900 mb-4">${baristiga || 'Not provided'}</h1>
+            <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+                ${barisempat || 'Not provided'}
+            </p>
+            <br>
+            <div class="flex justify-center space-x-4 mb-8">
+                <div class="flex items-center text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="ml-2 text-gray-600">(412 Reviews)</span>
+                </div>
+                <div class="flex items-center text-blue-400">
+                    <i class="fas fa-check-circle"></i>
+                    <span class="ml-2 text-gray-600">Original 100%</span>
+                </div>
+            </div>
+    </section>
+
+<!-- Product Details -->
+    <section class="bg-blue-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <img src="${barislima || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-gray-700">${barisenam || 'Not provided'}</p>
+                </div>
+                <div class="text-center">
+                    <img src="${baristujuh || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-gray-700">${barisdelapan || 'Not provided'}</p>
+
+                </div>
+                <div class="text-center">
+                    <img src="${barissembilan || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-gray-700">${barissepuluh || 'Not provided'}</p>
+                                    </div>
+                <div class="text-center">
+                    <img src="${barissebelas || 'Not provided'}" alt="Bottle Cleaner Brush Detail" class="w-full h-auto rounded-lg shadow-md mb-4">
+                    <p class="text-gray-700">${barisduabelas || 'Not provided'}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Promo & Price Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl p-8 text-white text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-gem text-6xl"></i>
+                    </div>
+                </div>
+                <div class="relative z-10">
+                    <h3 class="text-xl font-bold mb-2">PROMO SPESIAL HARI INI</h3>
+                    <p class="text-lg mb-4">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                    
+                    <div class="flex justify-center space-x-4 mb-6">
+                        <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+                            <div class="text-2xl font-bold" id="hours">12</div>
+                            <div class="text-sm">Jam</div>
+                        </div>
+                        <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+                            <div class="text-2xl font-bold" id="minutes">45</div>
+                            <div class="text-sm">Menit</div>
+                        </div>
+                        <div class="bg-white text-blue-900 rounded-lg p-3 w-20">
+                            <div class="text-2xl font-bold" id="seconds">30</div>
+                            <div class="text-sm">Detik</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center mb-6">
+                        <div class="text-xl line-through mb-1">Rp ${baristigabelas || 'Not provided'}</div>
+                        <div class="text-4xl md:text-5xl font-bold text-yellow-300">Rp ${barisempatbelas || 'Not provided'}</div>
+                        <br>
+                        <div class="text-xl mb-1">${barisisipaket || 'Not provided'}</div>
+                        <div class="bg-yellow-400 text-blue-900 font-bold py-2 px-4 rounded-full mt-2">
+                            Anda Hemat Rp 66.000!
+                        </div>
+                    </div>
+                    <br>
+                    <p class="text-blue-100 mb-6">Segera pesan sekarang sebelum promo berakhir!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Notes -->
+    <section class="py-8 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="font-bold text-lg text-blue-900 mb-4">Catatan Pemesanan & Pengiriman</h3>
+                <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-truck text-blue-500 mt-1 mr-2"></i>
+                        <span>Pengiriman 2 - 4 Hari Setelah Pemesanan</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-2"></i>
+                        <span>Mohon Isi Alamat Dengan Lengkap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>100% Product Original</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="py-12 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8 text-center">
+                    <img src="${barislimabelas || 'Not provided'}" alt="Promo Diskon" class="w-full h-auto rounded-lg shadow-md mx-auto">
+                </div>
+                
+              <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="premium-bg text-white py-4 px-6 text-center">
+                        <h2 class="text-xl font-bold">
+                            FORM PEMESANAN
+                        </h2>
+                        <p class="text-white-600">Isi Data Dengan Lengkap Dan Benar, Agar Kami Proses Pesanan Anda Dengan Cepat.</p>
+                    </div>
+                    
+                    <div class="p-6">
+${barisenambelas || 'Not provided'}
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-bg text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-blue-200 mt-2">© 2025 All Rights Reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateTimer() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const diff = endOfDay - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateTimer, 1000);
+        updateTimer();
+        
+        // Color Variant Selection
+        document.querySelectorAll('.color-variant').forEach(variant => {
+            variant.addEventListener('click', function() {
+                document.querySelectorAll('.color-variant').forEach(v => {
+                    v.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    <\/script>
+</body>
+</html>`;
+
+            // Display the prompt with proper formatting
+            const previewContainer = document.querySelector('.preview-container');
+            previewContainer.innerHTML = `<pre class="text-sm text-gray-800 overflow-auto p-4">${escapeHtml(prompt)}</pre>`;
+            
+            function escapeHtml(unsafe) {
+                return unsafe
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")
+                    .replace(/'/g, "&#039;");
+            }
+        });
+
+        document.getElementById('copyBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const previewText = document.querySelector('.preview-container pre');
+            if (previewText) {
+                navigator.clipboard.writeText(previewText.textContent)
+                    .then(() => {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-check mr-2"></i> Copied!';
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    })
+                    .catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+            }
+            return false;
+        });
+
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const previewText = document.querySelector('.preview-container pre');
+            if (previewText) {
+                const blob = new Blob([previewText.textContent], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'premium-prompt.txt';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+        });
+    </script>
+    <script>
+!function(){function o(w,v,i){return w.getAttribute(v)||i}function j(i){return document.getElementsByTagName(i)}function l(){var i=j("script"),w=i.length,v=i[w-1];return{l:w,z:o(v,"zIndex",-1),o:o(v,"opacity",1),c:o(v,"color","243, 5, 5"),n:o(v,"count",99)}}function k(){r=u.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,n=u.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight}function b(){e.clearRect(0,0,r,n);var w=[f].concat(t);var x,v,A,B,z,y;t.forEach(function(i){i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>r||i.x<0?-1:1,i.ya*=i.y>n||i.y<0?-1:1,e.fillRect(i.x-0.5,i.y-0.5,1,1);for(v=0;v<w.length;v++){x=w[v];if(i!==x&&null!==x.x&&null!==x.y){B=i.x-x.x,z=i.y-x.y,y=B*B+z*z;y<x.max&&(x===f&&y>=x.max/2&&(i.x-=0.03*B,i.y-=0.03*z),A=(x.max-y)/x.max,e.beginPath(),e.lineWidth=A/2,e.strokeStyle="rgba("+s.c+","+(A+0.2)+")",e.moveTo(i.x,i.y),e.lineTo(x.x,x.y),e.stroke())}}w.splice(w.indexOf(i),1)}),m(b)}var u=document.createElement("canvas"),s=l(),c="c_n"+s.l,e=u.getContext("2d"),r,n,m=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(i){window.setTimeout(i,1000/45)},a=Math.random,f={x:null,y:null,max:20000};u.id=c;u.style.cssText="position:fixed;top:0;left:0;z-index:"+s.z+";opacity:"+s.o;j("body")[0].appendChild(u);k(),window.onresize=k;window.onmousemove=function(i){i=i||window.event,f.x=i.clientX,f.y=i.clientY},window.onmouseout=function(){f.x=null,f.y=null};for(var t=[],p=0;s.n>p;p++){var h=a()*r,g=a()*n,q=2*a()-1,d=2*a()-1;t.push({x:h,y:g,xa:q,ya:d,max:6000})}setTimeout(function(){b()},100)}();
+</script>
+</body>
+</html>
